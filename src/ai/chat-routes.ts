@@ -169,7 +169,7 @@ export function registerAiChatRoutes(
     // run on DeepSpace's managed Anthropic model, never on a client-chosen
     // OpenAI/Gemini model. Ignore the client-sent `modelId` and always
     // resolve the pinned model instead.
-    const PINNED_MODEL_ID = 'claude-opus-5'
+    const PINNED_MODEL_ID = 'claude-haiku-4-5'
     const selectedModel = resolveDeepSpaceAgentModel(PINNED_MODEL_ID, 'application')
     if (!selectedModel) {
       // Name the valid ids: the caller has no other way to learn them here.
